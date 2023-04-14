@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-st.title('**Iris database analysis!**')
+#titolo
+st.title('**Iris database analysis**')
 
+#tabella
 df_fiori = pd.read_csv("iris.csv")
-
 st.dataframe(df_fiori)
 
 #background
@@ -27,6 +28,7 @@ def add_bg_from_url():
      )
 add_bg_from_url() 
 
+#rickroll
 audio_file = open("rick.mp3", "rb")
 audio_bytes = audio_file.read()
 st.audio(audio_bytes, format="audio/mp3")
